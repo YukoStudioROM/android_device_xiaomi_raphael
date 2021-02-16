@@ -45,6 +45,7 @@ TARGET_KERNEL_CONFIG := raphael_user_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
+BOARD_VENDOR := xiaomi
 
 # Audio
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
