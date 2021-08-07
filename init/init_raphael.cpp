@@ -49,4 +49,8 @@ void vendor_load_properties() {
         load_raphaelglobal();
     else if (region.find("INDIA") != std::string::npos)
         load_raphaelin();
+
+    if (region.find("CN") != std::string::npos ||
+        region.find("GLOBAL") != std::string::npos)
+        property_override("ro.boot.product.hardware.sku", "raphael");
 }
