@@ -136,9 +136,6 @@ ro.nfc.port=I2C
 # PASR
 vendor.power.pasr.enabled=true
 
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
-
 # Qualcomm System Daemon
 persist.vendor.qcomsysd.enabled=1
 
