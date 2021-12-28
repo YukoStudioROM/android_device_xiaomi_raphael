@@ -307,6 +307,15 @@
       "HoldFd": true
     },
     {
+      "Name": "F2fsRecessModeEnable",
+      "Path": "/sys/fs/f2fs/sda32/gc_urgent",
+      "Values": [
+        "2",
+        "0"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -402,6 +411,12 @@
       "Value": "2597"
     },
     {
+      "PowerHint": "DEVICE_IDLE",
+      "Node": "F2fsRecessModeEnable",
+      "Duration": 0,
+      "Value": "2"
+    },
+    {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 5000,
@@ -490,6 +505,12 @@
       "Node": "L3BigClusterMinFreq",
       "Duration": 5000,
       "Value": "1440000000"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "F2fsRecessModeEnable",
+      "Duration": 0,
+      "Value": "2"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
