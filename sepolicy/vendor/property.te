@@ -1,1 +1,4 @@
 vendor_internal_prop(vendor_thermal_normal_prop)
+
+# Power
+type vendor_power_prop, property_type;
